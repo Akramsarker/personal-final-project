@@ -141,6 +141,78 @@ grid-gap: 4rem;
 
  }
 
+ /* Technogies */
+ #technogies .grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(296px,1fr));
+  grid-gap: 3rem;
+  /* margin-bottom: 6rem; */
+ }
+ /* .text-center {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background-image: linear-gradient(to right, #c20f9b, #0b35b3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: .4s;
+} */
+
+.custom-style{
+ max-width: auto;
+ margin: auto;
+ font-weight: 700;
+    font-size: 45px;
+  margin-bottom: 4rem;
+  background-image: linear-gradient(to right, rgb(117, 78, 249), #d784af) !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: .4s;
+  
+}
+.custom-style:hover {
+  transform: skewX(3deg) skewY(4deg);
+  text-shadow: 1rem 1rem 2rem rgb(0 0 0 / 20%);
+}
+
+ .feature-box {
+
+ background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+    transition: .4s;
+ }
+ #technogies .feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+ #technogies .grid-items li {
+  margin-bottom: 1rem;
+  list-style: none
+}
+#technogies .grid-items h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+#technogies i {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to right, #c20f9b, #0b35b3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: .3s;
+}
+#technogies i:hover {
+  transform: scale(1.4);
+}
+
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
@@ -603,7 +675,7 @@ grid-gap: 4rem;
           height: 45px; }
 
 .header-content {
-  height: 730px;
+  height: calc(100vh - 80px);
   width: 100%;
   margin-top: 80px;
   position: relative;

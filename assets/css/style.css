@@ -681,12 +681,6 @@ grid-gap: 4rem;
   position: relative;
   overflow: hidden;
   background-color: #fbfbfb; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-content {
-      height: 550px; } }
-  @media (max-width: 767px) {
-    .header-content {
-      height: 550px; } }
   .header-content .header-shape {
     position: absolute !important; }
     .header-content .header-shape.shape-one {

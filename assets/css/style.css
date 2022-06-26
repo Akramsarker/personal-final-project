@@ -1199,8 +1199,156 @@ grid-gap: 4rem;
       opacity: 1; }
 
 /*===========================
-       6.PRICING css 
+       6.PRICING css cube
+
+
 ===========================*/
+
+.tech-cube {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  object-fit: scale-down;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@media (max-width: 768px) {
+  .tech-cube {
+    margin-top: 10vh;
+  }
+}
+
+.cube {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+
+.cube>div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  border: solid 3px #754EF9;
+  background-color: rgba(249, 243, 237, 0.7)
+}
+
+.front {
+  transform: translateZ(100px);
+  display: flex;
+  align-items: center;
+}
+
+.front>img {
+  width: 150px;
+}
+.left > img{
+  height: 70%!important;
+}
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+  display: flex;
+  align-items: center;
+}
+
+.back>img {
+  width: 150px;
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.right>img {
+  width: 150px;
+}
+
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+  display: flex;
+  align-items: center;
+}
+
+.left>img {
+  width: 150px;
+}
+
+.top {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+  display: flex;
+  align-items: center;
+}
+
+.top>img {
+  width: 150px;
+}
+
+.bottom {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+  display: flex;
+  align-items: center;
+}
+
+.bottom>img {
+  width: 150px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube {
+  animation: rotate 10s infinite linear;
+}
+
+/* adding hover effect */
+.tech-cube:hover .front {
+  transform: translateZ(200px);
+}
+
+.tech-cube:hover .back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.tech-cube:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.tech-cube:hover .left {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.tech-cube:hover .top {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.tech-cube:hover .bottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+
+.cube>div {
+  transition: transform 0.2s ease-in;
+}
+/* End cube */
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pricing-area {
     padding-top: 90px;

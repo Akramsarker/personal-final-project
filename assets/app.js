@@ -1,26 +1,22 @@
-const botton = document.querySelector('#toggle');
+const toggleBtn = document.querySelector('#toggle');
+
 const header = document.querySelector('#parallax');
 const navigation = document.querySelector('.navigation');
+const navbarToggler = document.querySelector('.navbar-toggler');
 const about = document.querySelector('.about-area');
 const work = document.querySelector('.work-area');
 const contact = document.querySelector('.contact-area');
 const technogies = document.querySelector('.technogies-area');
 const footer = document.querySelector('.footer-widget');
 
-botton.addEventListener('click', () => {
+toggleBtn.addEventListener('change', () => {
   console.log('clicked');
-  navigation.style.backgroundColor = '#000000';
-  navigation.style.color = '#ffffff';
-  header.style.backgroundColor = '#000000';
-  header.style.color = '#ffffff';
-  about.style.backgroundColor = '#000000';
-  about.style.color = '#ffffff';
-  work.style.backgroundColor = '#000000';
-  work.style.color = '#ffffff';
-  contact.style.backgroundColor = '#000000';
-  contact.style.color = '#ffffff';
-  technogies.style.backgroundColor = '#000000';
-  // footer.style.backgroundColor = '#001111';
-  // footer.style.color = '#ffffff';
-
+navigation.classList.toggle('dark');
+header.classList.toggle('dark');
+navbarToggler.classList.toggle('navbar-toggler-bg-color');
+about.classList.toggle('dark')
+work.classList.toggle('dark')
+contact.classList.toggle('dark')
+technogies.classList.toggle('dark')
+footer.classList.toggle('dark-light')
 });

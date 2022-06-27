@@ -52,6 +52,17 @@ body {
   justify-content: right;
 }
 
+.dark {
+  background: #000000 !important;
+}
+.navbar-toggler-bg-color{
+  background: #ffffff !important;
+  padding: 0.3rem 0.7rem !important;
+}
+
+.dark-light{
+  background: #1e1d1d !important;
+}
 .slider {
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
@@ -90,7 +101,7 @@ body {
 }
 
 .slider:checked:after {
-  background: #16a085;
+  background: #754ef9;
 }
 
 .slider,

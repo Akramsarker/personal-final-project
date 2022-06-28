@@ -52,6 +52,18 @@ body {
   justify-content: right;
 }
 
+@media (max-width: 1650px) {
+  .shape-six {
+    display: none !important;
+  }
+}
+
+.title-color{
+  color: #ffffff;
+}
+.about-title-color{
+  color: #ffffff;
+}
 .dark {
   background: #000000 !important;
 }

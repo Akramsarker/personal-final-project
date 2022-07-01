@@ -67,9 +67,15 @@ body {
 .dark {
   background: #000000 !important;
 }
-.navbar-toggler-bg-color{
+
+.toggler-icon-bg-one{
+  background: #ffffff!important;
+}
+.toggler-icon-bg-two{
   background: #ffffff !important;
-  padding: 0.3rem 0.7rem !important;
+}
+.toggler-icon-bg-three{
+  background: #ffffff !important;
 }
 
 .dark-light{
@@ -245,19 +251,9 @@ p {
   grid-gap: 3rem;
   /* margin-bottom: 6rem; */
 }
-/* .text-center {
-  text-align: center;
-  font-size: 3rem;
-  line-height: 4rem;
-  margin-bottom: 3rem;
-  padding: 3rem;
-  background-image: linear-gradient(to right, #c20f9b, #0b35b3);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  transition: .4s;
-} */
+.shape-none {
+  display: none !important;
+}
 
 .pb-custom {
   padding-bottom: 4rem;
@@ -269,11 +265,7 @@ p {
   font-weight: 700;
   font-size: 2.813rem;
   margin-bottom: 1.7rem;
-  background-image: linear-gradient(
-    to right,
-    rgb(117, 78, 249),
-    #d784af
-  ) !important;
+  background-image: linear-gradient( to right, rgb(117, 78, 249), #d784af ) !important;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -1121,8 +1113,9 @@ p {
   position: absolute;
   content: "";
   width: 100%;
-  height: 82%;
-  border: 20px solid #754ef9;
+  height: 86%;
+  border: 2px solid #754ef9;
+  border-radius: 10px;
   border-bottom: 0;
   top: 50%;
   left: 0;
@@ -1137,7 +1130,6 @@ p {
   content: "";
   width: 100%;
   height: 20px;
-  background-color: #754ef9;
   left: 0;
   bottom: 58px;
   z-index: 11;

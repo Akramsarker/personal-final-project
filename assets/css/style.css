@@ -205,6 +205,9 @@ p {
   color: #8a8fa3;
   margin: 0px;
 }
+.border-radius{
+  border-radius: 0.5rem !important;
+}
 @media (max-width: 767px) {
   p {
     font-size: 15px;
@@ -285,9 +288,10 @@ p {
 
 .feature-box {
   background: #f4f4f4;
-  padding: 3rem 1rem;
+  padding: 2.5rem 0.8rem;
   text-align: center;
   transition: 0.4s;
+  border-radius: 0.5rem;
 }
 #technogies .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
@@ -1470,6 +1474,7 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  border-radius: 0.5rem;
 }
 .single-work .work-overlay .work-content {
   position: absolute;
@@ -1917,7 +1922,7 @@ p {
 
 .contact-box {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #7d5de9;
   padding: 30px 35px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
